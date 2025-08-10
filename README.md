@@ -1,44 +1,33 @@
-# Weapon and Knievs Detection System
+**Weapon and Knife Detection System**
+This repository provides the codebase and assets for an academic project focused on identifying weapons, specifically firearms and knives, using advanced computer vision techniques. The work was carried out as part of research in the field of cybersecurity.
 
-This repository contains the source code and resources related to the academic weapon detection project, developed as part of research in the area of ​​computer security.
+**Project Summary**
+The goal of this project is to create and deploy a smart, automated system capable of detecting guns and knives in real time. By leveraging the YOLOv8 (You Only Look Once) deep learning model along with transfer learning methods, the system aims to enhance public safety through constant video monitoring.
 
-## Overview
+**Main Highlights**
+YOLOv8-Based Detection: Utilizes the YOLOv8 architecture for fast and accurate object detection in live video streams.
 
-The main objective of this project is to design and implement an advanced system for the autonomous detection of firearms and knives. Using the YOLOv8 (You Only Look Once) framework and transfer learning techniques, we seek to improve security effectiveness through continuous, real-time surveillance.
+Transfer Learning Implementation: Employs transfer learning to fine-tune the model for weapon detection, improving its performance in the intended use case.
 
-## Key Features
+IP Camera Compatibility: Designed for smooth integration with IP cameras, enabling real-time monitoring and rapid alert generation.
 
-- **YOLOv8 Framework:** One implementation uses YOLOv8, known for its efficiency in real-time object detection.
-  
-- **Transfer Learning:** Transfer learning techniques are employed to adapt the model to a specific context and improve accuracy in weapon detection.
+**Dataset**
+Dataset link: [Weapon 2 Dataset](https://universe.roboflow.com/joao-assalim-xmovq/weapon-2/dataset/2)
 
-- **Integration with IP Cameras:** The system is designed for easy integration with IP cameras, allowing for real-time surveillance and immediate notifications.
+**Usage Instructions**
+**Clone the repository:**
 
-
-## Dataset
-
-https://universe.roboflow.com/joao-assalim-xmovq/weapon-2/dataset/2
-
-## How to use
-
-1. **Repository Cloning:**
-
-```
 git clone https://github.com/JoaoAssalim/Weapons-and-Knives-Detector-with-YOLOv8.git
-```
 
-2. **Installation of dependencies:**
+**Install the required dependencies:**
 
-```
 pip install -r requirements.txt
-```
 
-3. **System Execution:**
+**Run the system:**
+**For processing stored images:**
 
-```
 python detecting-images.py
 
-for live,
+**For real-time detection from a live camera feed:**
 
-live_detection.py
-```
+python live_detection.py
